@@ -6,7 +6,7 @@
 }
 /* sheared style */
 .btn-primary {
-  padding: 20px 25px;
+  padding: 15px 20px;
   border-radius: 8px;
   color: #fff;
   font-size: 1.25rem;
@@ -50,50 +50,115 @@ li a {
   margin: 0 auto;
   margin-top: 15vh;
   margin-bottom: 35px;
-  
 }
 .banner-title {
   font-size: 2.8rem;
   font-weight: 700px;
   color: #131313;
   margin-bottom: 20px;
-  
 }
 .banner-description {
   color: #727272;
   font-size: 15px;
   margin-bottom: 20px;
 }
-.banner img{
+.banner img {
   width: 100%;
 }
 
+/* main  features style */
+main {
+  max-width: 970px;
+  margin: 70px auto;
+}
+.teams-container {
+  display: flex;
+  align-items: center;
+}
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+.img{
+  width: 250px;
+  height: 250px;
+  
+}
+.teams-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.teams-title {
+  font-size: 2.4rem;
+}
+.span1 {
+  color: #727272;
+  font-weight: 500px;
+}
+.span2 {
+  color: #131313;
+  font-weight: 700px;
+}
+.span3 {
+  color: #ff900e;
+  font-weight: 700px;
+}
+.teams-description {
+  color: #727272;
+  font-size: 11.5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.shakil{
+  display: none;
+}
+
+
 /* responsive media queries */
 /* mobile devices */
-@media screen and (max-width:576px) {
-  header{
+@media screen and (max-width: 576px) {
+  header {
     padding: 30px;
   }
-  nav {
-    flex-direction: column;
-    
+  nav,
+  .teams-container
+  {
+    flex-direction:column;
   }
-  ul li{
+  ul li {
     margin-top: 25px;
-    
   }
+  .teams-content{
+    margin-top: 20px;
+  }
+
+  .teams-img-container{
+    grid-template-columns: 1fr;
+  }
+ 
+
+  
   
 }
 /* tablet or medium devices */
-@media screen and (min-width:576px) and (max-width:960px) {
-  header{
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
     padding: 60px;
   }
-  nav{
+  nav,
+  .teams-container 
+  {
     flex-direction: column;
   }
-  ul li{
+  ul li {
     margin-top: 25px;
   }
-  
+
+  .teams-content{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+
 }
